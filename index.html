@@ -685,7 +685,7 @@
 
   /* ---------- PROGRESS BAR ---------- */
   .progress-bar{
-    position:fixed;top:32px;left:0;width:100%;height:3px;z-index:250;
+    position:fixed;top:0;left:0;width:100%;height:3px;z-index:250;
     background:rgba(255,255,255,0.06);
   }
   .progress-bar-fill{
@@ -700,13 +700,6 @@
   .navlinks a.active::after{width:100%;}
 
   /* ---------- PREVIEW BADGE ---------- */
-  .preview-badge{
-    position:fixed;top:0;left:0;right:0;z-index:200;
-    background:var(--gold);color:var(--ink);
-    text-align:center;font-size:11.5px;letter-spacing:0.08em;font-weight:700;
-    padding:7px 0;text-transform:uppercase;
-  }
-  header{margin-top:32px;}
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width:980px){
@@ -757,8 +750,6 @@
 </style>
 </head>
 <body>
-
-<div class="preview-badge">Pré-visualização de reformulação · Barroso &amp; Gringo Advogados</div>
 
 <!-- ================= HEADER ================= -->
 <div class="progress-bar"><div class="progress-bar-fill" id="progressFill"></div></div>
