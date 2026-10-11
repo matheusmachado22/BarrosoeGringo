@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os sócios do escritório Barroso &amp; Gringo Advogados, suas trajetórias profissionais e áreas de atuação.">
+  <meta name="theme-color" content="#081a33">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sócios | Barroso &amp; Gringo Advogados">
+  <meta property="og:description" content="Conheça os sócios do escritório Barroso &amp; Gringo Advogados e suas áreas de atuação.">
+  <title>Sócios | Barroso &amp; Gringo Advogados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #081a33;
+      --ink-2: #0c2245;
+      --cream: #fff;
+      --cream-dim: #c9d2e2;
+      --stone: #aab5c8;
+      --gold: #d4a017;
+      --gold-2: #f1c04f;
+      --gold-dim: #a67d14;
+      --hair: rgba(255, 255, 255, .12);
+      --glass: rgba(255, 255, 255, .045);
+      --maxw: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse 1200px 600px at 50% 0%, rgba(255, 255, 255, .035), transparent 60%),
+        linear-gradient(180deg, var(--ink) 0%, #071627 100%);
+      color: var(--cream);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: .035;
+      mix-blend-mode: overlay;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 5px; }
+    img { display: block; max-width: 100%; }
+    h1, h2, h3 { margin: 0; font-family: 'Fraunces', serif; font-weight: 500; }
+    .wrap { width: min(100% - 64px, var(--maxw)); margin: 0 auto; }
+
+    .site-header {
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px solid var(--hair);
+      background: rgba(6, 17, 35, .52);
+    }
+    .header-row {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      font: 500 19px/1.15 'Fraunces', serif;
+      letter-spacing: .02em;
+    }
+    .brand small {
+      display: block;
+      margin-top: 5px;
+      color: var(--stone);
+      font: 600 9px/1.2 'Manrope', sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .home-link, .profile-nav a {
+      transition: color .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 11px 15px;
+      border: 1px solid var(--hair);
+      color: var(--cream-dim);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .home-link:hover, .profile-nav a:hover {
+      border-color: rgba(212, 160, 23, .55);
+      color: var(--gold-2);
+    }
+    .profile-nav {
+      display: flex;
+      gap: 8px;
+      padding: 13px 0;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--gold-dim) transparent;
+    }
+    .profile-nav a {
+      flex: 0 0 auto;
+      padding: 9px 13px;
+      border: 1px solid transparent;
+      color: var(--cream-dim);
+      font-size: 12px;
+    }
+
+    .intro { padding: 76px 0 46px; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+    h1 { margin-top: 17px; font-size: clamp(42px, 6vw, 68px); line-height: 1.05; font-weight: 400; }
+    .intro p { max-width: 670px; margin: 18px 0 0; color: var(--cream-dim); font-size: 15px; line-height: 1.8; }
+
+    .profiles { padding-bottom: 50px; }
+    .profile {
+      display: grid;
+      grid-template-columns: minmax(240px, .72fr) minmax(0, 1.28fr);
+      align-items: start;
+      gap: clamp(32px, 6vw, 82px);
+      padding: 54px 0 62px;
+      border-top: 1px solid var(--hair);
+      scroll-margin-top: 28px;
+    }
+    .profile-photo {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: var(--ink-2);
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+    .profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 16%; filter: grayscale(.12) contrast(1.04); }
+    .profile-copy { min-width: 0; padding-top: 8px; }
+    .profile-number { color: var(--gold); font: italic 15px 'Fraunces', serif; }
+    .profile h2 { margin-top: 12px; font-size: clamp(30px, 4vw, 43px); line-height: 1.12; }
+    .profile-role { margin: 12px 0 0; color: var(--gold-2); font-size: 12px; font-weight: 600; letter-spacing: .04em; }
+    .profile-bio { margin-top: 26px; }
+    .profile-bio p { margin: 0 0 17px; color: var(--cream-dim); font-size: 14px; line-height: 1.85; font-weight: 300; }
+    .profile-bio p:last-child { margin-bottom: 0; }
+    .areas { margin-top: 28px; }
+    .areas h3 { color: var(--gold); font: 600 10px 'Manrope', sans-serif; letter-spacing: .2em; text-transform: uppercase; }
+    .area-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .area-list li { padding: 6px 11px; border: 1px solid rgba(212, 160, 23, .3); color: var(--cream-dim); font-size: 11px; }
+
+    .site-footer { border-top: 1px solid var(--hair); padding: 28px 0 38px; }
+    .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .site-footer p { margin: 0; color: var(--stone); font-size: 11px; }
+    .back-top { color: var(--gold-2); font-size: 12px; font-weight: 600; }
+    .back-top:hover { color: var(--cream); }
+
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 40px, var(--maxw)); }
+      .header-row { min-height: 72px; gap: 12px; }
+      .brand { font-size: 16px; }
+      .brand small { font-size: 8px; }
+      .home-link { padding: 10px 11px; font-size: 11px; }
+      .profile-nav { margin: 0 -20px; padding: 10px 20px; }
+      .intro { padding: 56px 0 34px; }
+      .profile { grid-template-columns: minmax(0, 1fr); gap: 25px; padding: 38px 0 44px; }
+      .profile-photo { width: min(100%, 390px); aspect-ratio: 4 / 4.5; }
+      .profile-copy { padding-top: 0; }
+      .profile-bio { margin-top: 20px; }
+      .footer-row { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <div class="wrap">
+      <div class="header-row">
+        <a class="brand" href="index.html" aria-label="Barroso &amp; Gringo Advogados, página inicial">
+          Barroso &amp; Gringo <small>Advogados</small>
+        </a>
+        <a class="home-link" href="index.html"><span aria-hidden="true">←</span> Página inicial</a>
+      </div>
+      <nav class="profile-nav" aria-label="Navegação pelos perfis dos sócios">
+        <a href="#nathan-faleiros">Nathan Faleiros</a>
+        <a href="#gabriel-barroso">Gabriel Barroso</a>
+        <a href="#andre-gringo">André Luiz Gringo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro wrap" aria-labelledby="page-title">
+      <span class="eyebrow">Quem cuida do seu caso</span>
+      <h1 id="page-title">Nossos sócios</h1>
+      <p>Conheça as trajetórias, a experiência e as áreas de atuação dos sócios do Barroso &amp; Gringo Advogados.</p>
+    </section>
+
+    <div class="profiles wrap">
+      <section class="profile" id="nathan-faleiros" aria-labelledby="nathan-title">
+        <div class="profile-photo">
+          <img src="nathan-faleiros.jpg" alt="Retrato de Nathan Faleiros de Oliveira">
+        </div>
+        <div class="profile-copy">
+          <span class="profile-number">01</span>
+          <h2 id="nathan-title">Nathan Faleiros de Oliveira</h2>
+          <p class="profile-role">Sócio | OAB/MG 239.601</p>
+          <div class="profile-bio">
+            <p>Graduado em Direito pelo Centro Universitário do Triângulo — UNITRI, em 2024, e pós-graduando em Direito Tributário pelo Instituto Brasileiro de Estudos Tributários — IBET, Nathan Faleiros de Oliveira atua exclusivamente na área tributária, com experiência em questões consultivas e contenciosas, administrativas e judiciais, além de demandas relacionadas ao planejamento e à estratégia tributária empresarial.</p>
+            <p>Antes de integrar a sociedade do escritório, atuou por seis anos no escritório Ladir Franco Ribeiro, experiência que contribuiu para sua formação prática e para o desenvolvimento de uma visão estratégica sobre as relações entre empresas, contribuintes e o Fisco.</p>
+            <p>Sua atuação é pautada pela análise individualizada de cada situação, buscando compreender não apenas a questão jurídica apresentada, mas também o contexto, os objetivos e as necessidades de cada cliente. A partir dessa compreensão, busca construir soluções personalizadas, tecnicamente consistentes e alinhadas aos interesses de cada negócio.</p>
+            <p>No exercício da advocacia, acredita em uma atuação próxima, estratégica e cuidadosa, em que cada cliente é compreendido em sua individualidade e cada questão é analisada sob suas particularidades. Uma advocacia de clientes, e não de demandas, voltada à construção das melhores soluções jurídicas para cada realidade.</p>
+          </div>
+          <div class="areas">
+            <h3>Áreas de atuação</h3>
+            <ul class="area-list"><li>Direito Tributário</li><li>Estratégia Tributária</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile" id="gabriel-barroso" aria-labelledby="gabriel-title">
+        <div class="profile-photo">
+          <img src="gabriel-barroso.png" alt="Retrato de Gabriel Barroso Gonçalves">
+        </div>
+        <div class="profile-copy">
+          <span class="profile-number">02</span>
+          <h2 id="gabriel-title">Gabriel Barroso Gonçalves</h2>
+          <p class="profile-role">Sócio fundador | OAB/MG 205.365</p>
+          <div class="profile-bio">
+            <p>Sócio fundador do Barroso &amp; Gringo Advogados, Gabriel Barroso é graduado em Direito pela ESAMC Uberlândia e especialista em Direito Empresarial pela Fundação Getulio Vargas (FGV). Com mais de uma década de experiência profissional, construiu sua trajetória aliando profundo conhecimento técnico à experiência prática, desenvolvida em diferentes frentes da atividade jurídica, o que lhe permite uma abordagem estratégica, multidisciplinar e orientada à compreensão dos negócios e dos objetivos de seus clientes.</p>
+            <p>Ao longo de sua carreira, exerceu as funções de Procurador e Chefe de Licitações em âmbito municipal e, durante sua formação profissional, integrou os quadros do Ministério Público e do Tribunal de Justiça de Minas Gerais, onde atuou no suporte direto a Promotores de Justiça e Magistrados, adquirindo ampla experiência na análise de diferentes situações jurídicas. Possui, ainda, certificação em métodos alternativos de solução de conflitos pelo Tribunal de Justiça de Minas Gerais.</p>
+            <p>Atualmente, concentra sua atuação no Direito Civil Empresarial e no Agronegócio, com ênfase em estruturação e organização empresarial, contratos, negociações de alta complexidade, organização patrimonial, gestão de passivos e conflitos societários, assessorando empresas, empresários e produtores rurais em decisões estratégicas e na condução de relações jurídicas de relevância econômica.</p>
+            <p>Também atua na recuperação estratégica de créditos e no contencioso cível estratégico, especialmente na condução de demandas judiciais de maior complexidade, relevância econômica ou impacto significativo sobre os negócios e o patrimônio de seus clientes.</p>
+            <p>Sua prática profissional é pautada pela proximidade com o cliente, visão estratégica e compreensão aprofundada do negócio, buscando não apenas a solução de questões jurídicas, mas a construção de alternativas que ofereçam segurança, eficiência e previsibilidade para a tomada de decisões empresariais.</p>
+          </div>
+          <div class="areas">
+            <h3>Áreas de atuação</h3>
+            <ul class="area-list"><li>Direito Empresarial</li><li>Agronegócio</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile" id="andre-gringo" aria-labelledby="andre-title">
+        <div class="profile-photo">
+          <img src="andre-luiz-gringo.jpg" alt="Retrato de André Luiz Gringo dos Santos Filho">
+        </div>
+        <div class="profile-copy">
+          <span class="profile-number">03</span>
+          <h2 id="andre-title">André Luiz Gringo dos Santos Filho</h2>
+          <p class="profile-role">Sócio fundador | OAB/MG 207.829</p>
+          <div class="profile-bio">
+            <p>Sócio fundador do Barroso &amp; Gringo Advogados, André Luiz Gringo dos Santos Filho é graduado em Direito pela ESAMC Uberlândia e pós-graduado em Direito Imobiliário e em Direito de Família e Sucessões pela Escola Brasileira de Direito – EBRADI.</p>
+            <p>Ao longo de sua trajetória profissional, desenvolveu sólida experiência em questões relacionadas a negócios e patrimônio, especialmente na interface entre o Direito de Família e Sucessões e o Direito Imobiliário. Sua atuação combina conhecimento técnico, experiência prática e compreensão das repercussões patrimoniais, econômicas e negociais envolvidas em relações familiares, sucessórias e imobiliárias.</p>
+            <p>Há mais de uma década, atua como sócio e diretor da André Imóveis Ltda., sociedade empresária de relevante atuação no mercado imobiliário do Triângulo Mineiro, participando diretamente da condução e estruturação de negócios envolvendo imóveis urbanos e rurais. Essa vivência lhe proporcionou conhecimento aprofundado sobre a dinâmica do mercado, formação e negociação de negócios imobiliários, avaliação de riscos, documentação, regularização e particularidades práticas que envolvem operações dessa natureza.</p>
+            <p>Atualmente, concentra sua atuação em Direito de Família e Sucessões e Direito Imobiliário. Na área de Família e Sucessões, atua especialmente em inventários, partilhas, planejamento sucessório, organização patrimonial, divórcios e demais questões relacionadas à estruturação, preservação e transmissão de patrimônio. No Direito Imobiliário, atua na estruturação e análise de negócios, elaboração e revisão de contratos, regularização de imóveis, compra e venda, locações, questões registrais e operações envolvendo propriedades urbanas e rurais.</p>
+            <p>Possui, ainda, experiência na elaboração, revisão, negociação e estruturação de contratos em geral, especialmente em relações de natureza patrimonial, empresarial e imobiliária, com atenção à adequada distribuição de responsabilidades, prevenção de riscos e construção de mecanismos jurídicos capazes de conferir maior segurança e previsibilidade às relações negociais.</p>
+          </div>
+          <div class="areas">
+            <h3>Áreas de atuação</h3>
+            <ul class="area-list"><li>Família &amp; Sucessões</li><li>Direito Imobiliário</li><li>Patrimônio</li></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>Barroso &amp; Gringo Advogados</p>
+      <a class="back-top" href="index.html">← Voltar para a página inicial</a>
+    </div>
+  </footer>
+</body>
+</html>
