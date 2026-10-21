@@ -266,9 +266,8 @@
   }
   .hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
   .hero p.lead{
-    font-size:17px;line-height:1.75;color:var(--cream-dim);
-    max-width:480px;font-weight:300;
-    margin-bottom:38px;
+    max-width:560px;margin:0 0 30px;
+    color:var(--cream-dim);font:italic 400 clamp(16px,1.45vw,18px)/1.65 'Cormorant Garamond',serif;
   }
   .hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
   .scroll-cue{
@@ -585,6 +584,41 @@
   .contact-row span, .contact-row a{font-size:14px;color:var(--stone);font-weight:300;}
   .contact-row a:hover{color:var(--gold);}
 
+  /* ---------- UNIDADES ---------- */
+  .locations-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}
+  .location-card{
+    min-width:0;overflow:hidden;background:var(--ink);border:1px solid var(--hair);
+    box-shadow:0 24px 60px -42px rgba(8,26,51,.42);
+    transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+  }
+  .location-card:hover{
+    transform:translateY(-4px);border-color:rgba(212,160,23,.45);
+    box-shadow:0 30px 65px -38px rgba(8,26,51,.48);
+  }
+  .location-card__visual{
+    position:relative;aspect-ratio:1;overflow:hidden;background:#081a33;
+    border-bottom:2px solid var(--gold);
+  }
+  .location-card__visual img{
+    position:absolute;top:0;left:0;width:200%;max-width:none;height:auto;
+  }
+  .location-card--uberlandia .location-card__visual img{left:-100%;}
+  .location-card__content{padding:30px clamp(24px,4vw,42px) 36px;}
+  .location-card__label{
+    display:block;margin-bottom:8px;color:var(--gold-dim);
+    font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  }
+  .location-card__content h3{
+    margin:0 0 12px;font-size:clamp(24px,2.5vw,32px);font-weight:500;
+  }
+  .location-card__content h3 span{
+    color:var(--gold-dim);font:600 11px 'Manrope',sans-serif;
+    letter-spacing:.14em;white-space:nowrap;
+  }
+  .location-card__content address{
+    color:var(--stone);font-size:14px;font-style:normal;font-weight:400;line-height:1.8;
+  }
+
   /* ---------- FOOTER ---------- */
   footer{border-top:1px solid var(--hair);padding:70px 0 34px;position:relative;}
   .foot-grid{display:grid;grid-template-columns:1.3fr 0.8fr 0.8fr 1fr;gap:50px;margin-bottom:60px;}
@@ -650,6 +684,7 @@
     .brand-logo{height:44px;}
     .areas-grid{grid-template-columns:1fr;}
     .socios-grid{grid-template-columns:1fr;}
+    .locations-grid{grid-template-columns:1fr;gap:22px;}
     .socio-dialog{padding:24px 18px;}
     .socio-dialog__profile{grid-template-columns:minmax(0,1fr);gap:22px;}
     .socio-dialog__photo{max-width:230px;}
@@ -680,8 +715,7 @@
       <div class="navlinks" id="navLinks">
         <a href="#areas">Áreas de Atuação</a>
         <a href="#escritorio">O Escritório</a>
-        <a href="#socios">Sócios</a>
-        <a href="#escritorio">Vídeo Institucional</a>
+        <a href="#socios">Nossa Equipe</a>
         <a href="#contato">Contato</a>
         <a href="https://wa.me/553497358710" target="_blank" rel="noopener noreferrer" class="nav-contact">Fale no WhatsApp</a>
       </div>
@@ -725,6 +759,7 @@
     <div class="hero-grid">
       <div class="reveal in">
         <h1>Clareza jurídica.<br>Presença que <em>resolve</em>.</h1>
+        <p class="lead">Clareza jurídica e presença que resolve.<br>Advocacia em estado máximo de precisão.</p>
         <div class="hero-actions">
           <a href="#contato" class="btn btn-gold">Agendar Consulta</a>
           <a href="#areas" class="btn btn-ghost">Áreas de Atuação →</a>
@@ -742,14 +777,16 @@
       <div>
         <span class="section-index">01</span>
         <h2>Áreas de atuação</h2>
+        <p><strong>Estratégia jurídica para suas decisões, seu patrimônio e seus negócios.</strong></p>
+        <p>Atuamos de forma consultiva e contenciosa, com soluções jurídicas construídas a partir das particularidades de cada caso.</p>
       </div>
     </div>
     <div class="areas-grid reveal">
       <div class="area-card">
         <svg class="bg-icon" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg>
         <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">I.</span></div>
-        <h3>Administrativo e Setor Público</h3>
-        <p>Assessoria nas relações com a Administração Pública. Atuação em licitações, contratos administrativos, processos administrativos e questões envolvendo servidores públicos, com orientação jurídica e defesa perante os órgãos competentes.</p>
+        <h3>Empresarial</h3>
+        <p>Assessoria jurídica na constituição, organização e rotina das empresas. Atuação em questões societárias, contratos empresariais, negociações e conflitos entre sócios, com foco na prevenção de riscos e na continuidade dos negócios.</p>
         <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
       </div>
       <div class="area-card">
@@ -760,8 +797,29 @@
         <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
       </div>
       <div class="area-card">
+        <svg class="bg-icon" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8.5 8V6.5a2 2 0 012-2h3a2 2 0 012 2V8"/><path d="M3 13.5h18"/></svg>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8.5 8V6.5a2 2 0 012-2h3a2 2 0 012 2V8"/><path d="M3 13.5h18"/></svg></div><span class="area-num">III.</span></div>
+        <h3>Família e Sucessões</h3>
+        <p>Atuação em divórcios, união estável, guarda, alimentos, inventários e partilhas. Planejamento sucessório e organização patrimonial, com atenção às relações familiares, discrição e cuidado em cada etapa.</p>
+        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
+      </div>
+      <div class="area-card">
+        <svg class="bg-icon" viewBox="0 0 24 24"><path d="M4 11.5L12 5l8 6.5"/><path d="M6.5 10v10h11V10"/><path d="M10 20v-6h4v6"/></svg>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 11.5L12 5l8 6.5"/><path d="M6.5 10v10h11V10"/><path d="M10 20v-6h4v6"/></svg></div><span class="area-num">IV.</span></div>
+        <h3>Imobiliário</h3>
+        <p>Assessoria em negócios envolvendo imóveis urbanos e rurais, desde a análise documental até a elaboração de contratos. Atuação em compra e venda, locação, regularização de imóveis, usucapião e conflitos sobre posse e propriedade.</p>
+        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
+      </div>
+      <div class="area-card">
+        <svg class="bg-icon" viewBox="0 0 24 24"><path d="M12 3l7 3.2v5.3c0 5-3 8.3-7 9.5-4-1.2-7-4.5-7-9.5V6.2z"/><path d="M9 12.2l2 2 4-4.2"/></svg>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 3l7 3.2v5.3c0 5-3 8.3-7 9.5-4-1.2-7-4.5-7-9.5V6.2z"/><path d="M9 12.2l2 2 4-4.2"/></svg></div><span class="area-num">V.</span></div>
+        <h3>Tributário</h3>
+        <p>Consultoria e defesa em questões tributárias de pessoas físicas e empresas. Atuação em planejamento tributário, revisão de cobranças, recuperação de créditos, transações tributárias e processos administrativos e judiciais.</p>
+        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
+      </div>
+      <div class="area-card">
         <svg class="bg-icon" viewBox="0 0 24 24"><path d="M4.5 20V13.5M11 20V9M17.5 20V5.5"/><path d="M4 8.5L11 4l4 3 5.5-4"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4.5 20V13.5M11 20V9M17.5 20V5.5"/><path d="M4 8.5L11 4l4 3 5.5-4"/></svg></div><span class="area-num">III.</span></div>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4.5 20V13.5M11 20V9M17.5 20V5.5"/><path d="M4 8.5L11 4l4 3 5.5-4"/></svg></div><span class="area-num">VI.</span></div>
         <h3>Cível</h3>
         <p><strong>Contratual e Contencioso Estratégico</strong></p>
         <p>Elaboração e revisão de contratos, condução de negociações e atuação em disputas judiciais. Assessoria em responsabilidade civil, indenizações, cobranças, execuções, relações de consumo e conflitos patrimoniais.</p>
@@ -769,44 +827,23 @@
       </div>
       <div class="area-card">
         <svg class="bg-icon" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">IV.</span></div>
-        <h3>Empresarial</h3>
-        <p>Assessoria jurídica na constituição, organização e rotina das empresas. Atuação em questões societárias, contratos empresariais, negociações e conflitos entre sócios, com foco na prevenção de riscos e na continuidade dos negócios.</p>
-        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
-      </div>
-      <div class="area-card">
-        <svg class="bg-icon" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8.5 8V6.5a2 2 0 012-2h3a2 2 0 012 2V8"/><path d="M3 13.5h18"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8.5 8V6.5a2 2 0 012-2h3a2 2 0 012 2V8"/><path d="M3 13.5h18"/></svg></div><span class="area-num">V.</span></div>
-        <h3>Família e Sucessões</h3>
-        <p>Atuação em divórcios, união estável, guarda, alimentos, inventários e partilhas. Planejamento sucessório e organização patrimonial, com atenção às relações familiares, discrição e cuidado em cada etapa.</p>
-        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
-      </div>
-      <div class="area-card">
-        <svg class="bg-icon" viewBox="0 0 24 24"><path d="M4 11.5L12 5l8 6.5"/><path d="M6.5 10v10h11V10"/><path d="M10 20v-6h4v6"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 11.5L12 5l8 6.5"/><path d="M6.5 10v10h11V10"/><path d="M10 20v-6h4v6"/></svg></div><span class="area-num">VI.</span></div>
-        <h3>Imobiliário</h3>
-        <p>Assessoria em negócios envolvendo imóveis urbanos e rurais, desde a análise documental até a elaboração de contratos. Atuação em compra e venda, locação, regularização de imóveis, usucapião e conflitos sobre posse e propriedade.</p>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">VII.</span></div>
+        <h3>Trabalhista</h3>
+        <p>Consultoria preventiva e atuação judicial nas relações de trabalho. Orientação sobre contratação, rotinas trabalhistas e desligamentos, além da representação de empregadores e trabalhadores em reclamações, negociações e acordos.</p>
         <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
       </div>
       <div class="area-card">
         <svg class="bg-icon" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">VII.</span></div>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">VIII.</span></div>
         <h3>Previdenciário</h3>
         <p>Orientação e planejamento previdenciário, com análise do histórico contributivo e dos requisitos para benefícios. Atuação em pedidos de aposentadoria, pensão por morte, benefícios por incapacidade e revisões, nas vias administrativa e judicial.</p>
         <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
       </div>
       <div class="area-card">
         <svg class="bg-icon" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">VIII.</span></div>
-        <h3>Trabalhista</h3>
-        <p>Consultoria preventiva e atuação judicial nas relações de trabalho. Orientação sobre contratação, rotinas trabalhistas e desligamentos, além da representação de empregadores e trabalhadores em reclamações, negociações e acordos.</p>
-        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
-      </div>
-      <div class="area-card">
-        <svg class="bg-icon" viewBox="0 0 24 24"><path d="M12 3l7 3.2v5.3c0 5-3 8.3-7 9.5-4-1.2-7-4.5-7-9.5V6.2z"/><path d="M9 12.2l2 2 4-4.2"/></svg>
-        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 3l7 3.2v5.3c0 5-3 8.3-7 9.5-4-1.2-7-4.5-7-9.5V6.2z"/><path d="M9 12.2l2 2 4-4.2"/></svg></div><span class="area-num">IX.</span></div>
-        <h3>Tributário</h3>
-        <p>Consultoria e defesa em questões tributárias de pessoas físicas e empresas. Atuação em planejamento tributário, revisão de cobranças, recuperação de créditos, transações tributárias e processos administrativos e judiciais.</p>
+        <div class="icon-row"><div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4.5"/></svg></div><span class="area-num">IX.</span></div>
+        <h3>Administrativo e Setor Público</h3>
+        <p>Assessoria nas relações com a Administração Pública. Atuação em licitações, contratos administrativos, processos administrativos e questões envolvendo servidores públicos, com orientação jurídica e defesa perante os órgãos competentes.</p>
         <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.4"/></svg>
       </div>
     </div>
@@ -940,6 +977,41 @@
     </dialog>
 
 
+  </div>
+</section>
+
+<section class="section-pad section-light locations-section" aria-labelledby="locations-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Atendimento presencial</p>
+        <h2 id="locations-title">Nossas unidades</h2>
+      </div>
+    </div>
+
+    <div class="locations-grid">
+      <article class="location-card location-card--tupaciguara reveal">
+        <div class="location-card__visual">
+          <img src="Imagem%20escritorio%20IA.jpeg" alt="Ilustração da unidade de Tupaciguara, Minas Gerais" loading="lazy">
+        </div>
+        <div class="location-card__content">
+          <span class="location-card__label">Nossa unidade</span>
+          <h3>Tupaciguara <span>/ MG</span></h3>
+          <address>Rua Bueno Brandão, nº 30 — Centro,<br>salas 01 e 05, CEP 38480-000</address>
+        </div>
+      </article>
+
+      <article class="location-card location-card--uberlandia reveal">
+        <div class="location-card__visual">
+          <img src="Imagem%20escritorio%20IA.jpeg" alt="Ilustração da unidade de Uberlândia, Minas Gerais" loading="lazy">
+        </div>
+        <div class="location-card__content">
+          <span class="location-card__label">Nossa unidade</span>
+          <h3>Uberlândia <span>/ MG</span></h3>
+          <address>Av. Maria Silva Garcia, nº 575, sala 908 —<br>Granja Marileusa, CEP 38406-634</address>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
