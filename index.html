@@ -219,8 +219,8 @@
     position:relative;
     overflow:hidden;
     background:var(--ink) url("Seu%20Direito,%20Nossa%20Prioridade.webp") no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-size:auto 100%;
+    background-position:right center;
   }
   .hero-bg-mark{
     position:absolute;right:-6%;top:50%;transform:translateY(-50%);
@@ -229,8 +229,8 @@
   .hero::before{
     content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
     background:
-      linear-gradient(90deg,rgba(8,26,51,1) 0%,rgba(8,26,51,1) 38%,rgba(8,26,51,.9) 48%,rgba(8,26,51,.42) 66%,rgba(8,26,51,.18) 100%),
-      linear-gradient(180deg,rgba(8,26,51,.35) 0%,transparent 38%,rgba(8,26,51,.45) 100%);
+      linear-gradient(90deg,rgba(8,26,51,1) 0%,rgba(8,26,51,.98) 28%,rgba(8,26,51,.78) 43%,rgba(8,26,51,.34) 60%,rgba(8,26,51,.08) 78%,transparent 100%),
+      linear-gradient(180deg,rgba(8,26,51,.18) 0%,transparent 42%,rgba(8,26,51,.22) 100%);
   }
   .hero-lines{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;}
   .hero-lines path{
@@ -675,11 +675,14 @@
     .foot-grid{grid-template-columns:1fr 1fr;}
   }
   @media (max-width:720px){
-    .hero{background-position:60% center;}
+    .hero{
+      background-size:100% auto;
+      background-position:center bottom;
+    }
     .hero::before{
       background:
-        linear-gradient(90deg,rgba(8,26,51,.98) 0%,rgba(8,26,51,.92) 52%,rgba(8,26,51,.4) 100%),
-        linear-gradient(180deg,rgba(8,26,51,.45) 0%,transparent 42%,rgba(8,26,51,.65) 100%);
+        linear-gradient(90deg,rgba(8,26,51,.94) 0%,rgba(8,26,51,.82) 38%,rgba(8,26,51,.42) 68%,rgba(8,26,51,.12) 100%),
+        linear-gradient(180deg,rgba(8,26,51,.2) 0%,transparent 45%,rgba(8,26,51,.28) 100%);
     }
     nav{min-height:70px;gap:8px;}
     .burger{min-width:96px;min-height:70px;padding:0 14px;gap:9px;}
